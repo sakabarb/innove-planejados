@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Innove Móveis Planejados — Móveis sob medida em Florianópolis</title>
+<meta name="description" content="Móveis planejados sob medida em Florianópolis. Há mais de 20 anos com projeto, produção e montagem próprios. Cozinhas, closets, home office, painéis e banheiros.">
+<meta name="theme-color" content="#FAF8F5">
+<meta name="author" content="Innove Móveis Planejados">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Innove Móveis Planejados">
+<meta property="og:title" content="Innove Móveis Planejados — Móveis sob medida em Florianópolis">
+<meta property="og:description" content="Há mais de 20 anos transformando ambientes em Florianópolis. Projeto, produção e montagem próprios.">
+<meta property="og:url" content="https://innove-planejados.vercel.app/">
+<meta property="og:image" content="https://innove-planejados.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Parede revestida com painel ripado de madeira e armário embutido, projeto da Innove Móveis Planejados.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Innove Móveis Planejados — Móveis sob medida em Florianópolis">
+<meta name="twitter:description" content="Há mais de 20 anos transformando ambientes em Florianópolis. Projeto, produção e montagem próprios.">
+<meta name="twitter:image" content="https://innove-planejados.vercel.app/og-image.jpg">
+
+<link rel="canonical" href="https://innove-planejados.vercel.app/">
+<!-- Favicon derivado da logo. O PNG original permanece em /logo.png e é a base do apple-touch-icon. -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="images/hero-painel-ripado-topo.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- Base ---------- */
+:root{
+  --bg:#FAF8F5;
+  --bg-alt:#F2EDE6;
+  --ink:#2C2825;
+  --ink-soft:#6B635A;
+  --accent:#A97B4F;
+  --accent-deep:#8F6740;   /* variação escura do acento, para texto e fundos com contraste AA */
+  --line:#E0D6C8;
+
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  --header-h:76px;
+  --radius:8px;
+  --section-y:clamp(64px,9vw,120px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html:focus-within{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:1rem;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body.is-locked{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;margin:0;letter-spacing:-.005em}
+p{margin:0}
+
+:focus-visible{outline:2px solid var(--accent-deep);outline-offset:3px;border-radius:2px}
+.on-dark :focus-visible,.hero :focus-visible,.footer :focus-visible,.cta-band :focus-visible{outline-color:#FAF8F5}
+
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+@media (min-width:768px){.container{padding:0 40px}}
+
+.section{padding:var(--section-y) 0}
+.section--alt{background:var(--bg-alt)}
+
+.eyebrow{
+  font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent-deep);margin-bottom:20px;
+}
+.section-title{font-size:clamp(2rem,4.6vw,3.1rem)}
+.section-lead{
+  margin-top:18px;max-width:52ch;color:var(--ink-soft);
+  font-size:clamp(1rem,1.6vw,1.075rem);
+}
+.section-head{margin-bottom:clamp(40px,5vw,64px)}
+.section-head--center{text-align:center}
+.section-head--center .section-lead{margin-left:auto;margin-right:auto}
+
+/* ---------- Botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border-radius:2px;
+  font-size:.86rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;
+  text-decoration:none;white-space:nowrap;
+  transition:background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease);
+}
+.btn svg{width:17px;height:17px;flex:none}
+.btn--solid{background:var(--accent-deep);color:#FFF9F2}
+.btn--solid:hover{background:var(--ink);color:#FAF8F5}
+.btn--light{background:var(--bg);color:var(--ink)}
+.btn--light:hover{background:#fff}
+.btn--ghost{border:1px solid rgba(250,248,245,.5);color:#FAF8F5}
+.btn--ghost:hover{background:rgba(250,248,245,.12);border-color:rgba(250,248,245,.8)}
+.btn--dark{background:var(--ink);color:#FAF8F5}
+.btn--dark:hover{background:var(--accent-deep)}
+.btn:active{transform:translateY(1px)}
+
+/* ---------- Logo ---------- */
+.logo{display:block;color:currentColor}
+.logo text{font-family:var(--serif);fill:currentColor}
+
+/* ---------- Header ---------- */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  height:var(--header-h);
+  display:flex;align-items:center;
+  color:#FAF8F5;
+  transition:background-color .4s var(--ease),color .4s var(--ease),box-shadow .4s var(--ease),height .4s var(--ease);
+}
+.header::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:var(--bg);opacity:0;transition:opacity .4s var(--ease);
+}
+.header.is-scrolled{color:var(--ink);box-shadow:0 1px 0 var(--line),0 6px 24px -18px rgba(44,40,37,.5)}
+.header.is-scrolled::after{opacity:1}
+.header .container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.header__logo{display:flex;align-items:center;text-decoration:none}
+.header__logo .logo{height:38px;width:auto}
+@media (min-width:768px){.header__logo .logo{height:44px}}
+
+.nav{display:none}
+@media (min-width:900px){
+  .nav{display:flex;align-items:center;gap:34px}
+}
+.nav a{
+  position:relative;text-decoration:none;
+  font-size:.83rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;
+  padding:6px 0;transition:opacity .3s var(--ease);
+}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:currentColor;transition:width .35s var(--ease);
+}
+.nav a:hover::after,.nav a:focus-visible::after{width:100%}
+
+.burger{
+  display:flex;flex-direction:column;justify-content:center;gap:5px;
+  width:44px;height:44px;margin-right:-10px;align-items:center;
+}
+@media (min-width:900px){.burger{display:none}}
+.burger span{
+  display:block;width:22px;height:1.5px;background:currentColor;
+  transition:transform .35s var(--ease),opacity .25s var(--ease);
+}
+body.is-locked .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+body.is-locked .burger span:nth-child(2){opacity:0}
+body.is-locked .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+.mobile-nav{
+  position:fixed;inset:0;z-index:55;background:var(--bg);color:var(--ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s;
+}
+.mobile-nav.is-open{opacity:1;visibility:visible}
+.mobile-nav a:not(.btn){
+  text-decoration:none;font-family:var(--serif);font-size:2rem;padding:12px 20px;
+}
+.mobile-nav .btn{margin-top:28px;max-width:calc(100vw - 48px)}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;min-height:100vh;min-height:100svh;
+  display:flex;align-items:center;
+  padding:calc(var(--header-h) + 40px) 0 120px;
+  overflow:hidden;background:var(--ink);
+}
+.hero__img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center top;
+}
+.hero__scrim{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to right,rgba(28,25,22,.72) 0%,rgba(28,25,22,.5) 45%,rgba(28,25,22,.22) 100%),
+    linear-gradient(to bottom,rgba(28,25,22,.5) 0%,rgba(28,25,22,.1) 30%,rgba(28,25,22,.45) 100%);
+}
+.hero .container{position:relative;z-index:2}
+.hero__inner{max-width:min(660px,100%);color:#FAF8F5}
+.hero h1{
+  font-size:clamp(2.45rem,6.4vw,4.4rem);
+  letter-spacing:-.01em;text-wrap:balance;
+}
+.hero__sub{
+  margin-top:22px;max-width:38ch;
+  font-size:clamp(1rem,1.9vw,1.2rem);color:rgba(250,248,245,.9);
+}
+.hero__actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.hero__actions .btn{flex:1 1 auto;min-width:210px}
+@media (min-width:560px){.hero__actions .btn{flex:0 0 auto}}
+
+.scroll-hint{
+  position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  color:rgba(250,248,245,.72);text-decoration:none;
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+}
+.scroll-hint i{display:block;width:1px;height:46px;background:currentColor;opacity:.5;overflow:hidden;position:relative}
+.scroll-hint i::after{
+  content:"";position:absolute;left:0;top:0;width:1px;height:16px;background:#FAF8F5;
+  animation:trail 2.2s var(--ease) infinite;
+}
+@keyframes trail{0%{transform:translateY(-16px)}60%,100%{transform:translateY(46px)}}
+@media (max-width:559px){.scroll-hint span{display:none}.scroll-hint{bottom:22px}}
+
+/* ---------- Faixa de credibilidade ---------- */
+.strip{background:var(--bg-alt);border-bottom:1px solid var(--line)}
+.strip ul{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:1fr;
+}
+.strip li{
+  padding:20px 8px;text-align:center;
+  font-size:.86rem;letter-spacing:.04em;color:var(--ink-soft);
+  display:flex;align-items:center;justify-content:center;gap:9px;
+}
+.strip li + li{border-top:1px solid var(--line)}
+.strip strong{color:var(--ink);font-weight:500}
+.strip .star{width:14px;height:14px;color:var(--accent);flex:none}
+@media (min-width:768px){
+  .strip ul{grid-template-columns:repeat(3,1fr)}
+  .strip li{padding:26px 20px}
+  .strip li + li{border-top:0;border-left:1px solid var(--line)}
+}
+
+/* ---------- Sobre ---------- */
+.about__grid{display:grid;gap:clamp(36px,5vw,72px);align-items:center}
+@media (min-width:900px){.about__grid{grid-template-columns:1fr 1fr}}
+.about__copy p{margin-top:22px;color:var(--ink-soft);max-width:46ch}
+.about__copy p:first-of-type{margin-top:26px}
+.about__figure{position:relative}
+.about__figure img{
+  width:100%;height:clamp(340px,52vw,560px);object-fit:cover;
+  border-radius:var(--radius);
+}
+.about__rule{width:52px;height:1px;background:var(--accent);margin-top:30px}
+
+/* ---------- Galeria ---------- */
+.gallery{
+  display:grid;gap:16px;grid-template-columns:1fr;
+}
+@media (min-width:640px){.gallery{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media (min-width:1000px){.gallery{grid-template-columns:repeat(3,1fr);gap:20px}}
+
+.tile{
+  position:relative;display:block;width:100%;padding:0;
+  border-radius:var(--radius);overflow:hidden;background:var(--bg-alt);
+  text-align:left;
+}
+.tile img{
+  width:100%;height:clamp(260px,42vw,340px);object-fit:cover;
+  transition:transform .7s var(--ease);
+}
+@media (min-width:1000px){.tile img{height:330px}}
+.tile__veil{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(28,25,22,.78) 0%,rgba(28,25,22,.28) 34%,rgba(28,25,22,0) 62%);
+  transition:opacity .45s var(--ease);
+}
+.tile__label{
+  position:absolute;left:20px;right:56px;bottom:16px;
+  color:#FAF8F5;font-size:.84rem;letter-spacing:.03em;line-height:1.35;
+}
+.tile__zoom{
+  position:absolute;right:16px;bottom:16px;
+  width:32px;height:32px;border:1px solid rgba(250,248,245,.55);border-radius:50%;
+  display:grid;place-items:center;color:#FAF8F5;
+  opacity:0;transform:scale(.9);transition:opacity .4s var(--ease),transform .4s var(--ease);
+}
+.tile__zoom svg{width:14px;height:14px}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.045)}
+.tile:hover .tile__zoom,.tile:focus-visible .tile__zoom{opacity:1;transform:scale(1)}
+@media (hover:none){.tile__zoom{opacity:1;transform:scale(1)}}
+
+/* Cartão que fecha a grade (a galeria tem 8 fotos e a grade tem 9 células) */
+.tile-cta{
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);
+  padding:clamp(28px,3.2vw,38px);
+  display:flex;flex-direction:column;justify-content:center;
+  min-height:clamp(200px,30vw,260px);
+}
+@media (min-width:640px){.tile-cta{grid-column:span 2}}
+@media (min-width:1000px){.tile-cta{grid-column:span 1;min-height:330px}}
+.tile-cta h3{font-size:1.5rem}
+.tile-cta p{margin-top:12px;color:var(--ink-soft);font-size:.94rem;line-height:1.65}
+.tile-cta a{
+  margin-top:20px;align-self:flex-start;display:inline-flex;align-items:center;gap:9px;
+  font-size:.86rem;color:var(--accent-deep);text-decoration:none;
+  border-bottom:1px solid var(--line);padding-bottom:4px;
+  transition:border-color .3s var(--ease);
+}
+.tile-cta a:hover{border-color:var(--accent)}
+.tile-cta a svg{width:15px;height:15px;flex:none}
+
+/* ---------- Ambientes ---------- */
+.rooms{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+@media (min-width:640px){.rooms{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.rooms{grid-template-columns:repeat(3,1fr)}}
+.room{
+  background:var(--bg);padding:clamp(28px,3.4vw,40px);
+  transition:background-color .4s var(--ease);
+}
+.room:hover{background:var(--bg-alt)}
+.room__icon{color:var(--accent);margin-bottom:20px}
+.room__icon svg{width:32px;height:32px;display:block}
+.room h3{font-size:1.5rem}
+.room p{margin-top:10px;color:var(--ink-soft);font-size:.94rem;line-height:1.65}
+
+/* ---------- Depoimentos ---------- */
+.rating{
+  display:inline-flex;align-items:center;gap:10px;justify-content:center;
+  font-size:.86rem;letter-spacing:.05em;color:var(--ink-soft);margin-bottom:18px;
+}
+.rating .star{width:16px;height:16px;color:var(--accent)}
+.rating strong{color:var(--ink);font-weight:500;font-size:1rem}
+.quotes{display:grid;gap:20px}
+@media (min-width:768px){.quotes{grid-template-columns:repeat(2,1fr);gap:24px}}
+.quote{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(30px,3.6vw,44px);display:flex;flex-direction:column;
+}
+.quote__mark{
+  font-family:var(--serif);font-size:3.4rem;line-height:.7;color:var(--accent);
+  opacity:.5;margin-bottom:14px;
+}
+.quote blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.3rem,2.2vw,1.6rem);line-height:1.45}
+.quote figcaption{
+  margin-top:auto;padding-top:26px;
+  font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+}
+
+/* ---------- Contato ---------- */
+.contact__grid{display:grid;gap:clamp(36px,4.5vw,64px)}
+@media (min-width:900px){.contact__grid{grid-template-columns:1fr 1.05fr;align-items:start}}
+.info{list-style:none;margin:32px 0 0;padding:0}
+.info li{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.info li:last-child{border-bottom:1px solid var(--line)}
+.info__icon{color:var(--accent);flex:none;margin-top:2px}
+.info__icon svg{width:20px;height:20px;display:block}
+.info dt{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px}
+.info dd{margin:0;font-size:1.02rem}
+.info a{text-decoration:none;border-bottom:1px solid var(--line);transition:border-color .3s var(--ease)}
+.info a:hover{border-color:var(--accent)}
+.contact .btn{margin-top:32px}
+.map{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  background:var(--bg-alt);line-height:0;
+}
+.map iframe{width:100%;height:clamp(320px,46vw,520px);border:0;display:block}
+
+/* ---------- CTA final ---------- */
+.cta-band{background:var(--accent-deep);color:#FFF9F2;text-align:center;padding:clamp(64px,8vw,104px) 0}
+.cta-band h2{font-size:clamp(2rem,4.4vw,3rem);text-wrap:balance}
+.cta-band p{margin-top:18px;color:rgba(255,249,242,.86);max-width:44ch;margin-inline:auto}
+.cta-band .btn{margin-top:36px}
+
+/* ---------- Rodapé ---------- */
+.footer{background:var(--ink);color:rgba(250,248,245,.72);padding:clamp(56px,6vw,80px) 0 32px}
+.footer__grid{display:grid;gap:40px}
+@media (min-width:768px){.footer__grid{grid-template-columns:1fr auto;align-items:start;gap:56px}}
+.footer .logo{height:118px;width:auto;color:#FAF8F5;margin-left:-14px}
+.footer__addr{font-style:normal;margin-top:26px;font-size:.94rem;line-height:1.9;max-width:34ch}
+.footer__addr a{text-decoration:none;border-bottom:1px solid rgba(250,248,245,.25)}
+.footer__addr a:hover{border-color:rgba(250,248,245,.7);color:#FAF8F5}
+.footer__links{display:flex;flex-direction:column;gap:14px}
+.footer__links a{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  font-size:.86rem;letter-spacing:.05em;transition:color .3s var(--ease);
+}
+.footer__links a:hover{color:#FAF8F5}
+.footer__links svg{width:18px;height:18px;flex:none}
+.footer__base{
+  margin-top:clamp(44px,5vw,64px);padding-top:26px;
+  border-top:1px solid rgba(250,248,245,.14);
+  font-size:.78rem;letter-spacing:.03em;color:rgba(250,248,245,.55);
+}
+
+/* ---------- WhatsApp flutuante ---------- */
+.float-wa{
+  position:fixed;right:18px;bottom:18px;z-index:50;
+  width:54px;height:54px;border-radius:50%;
+  background:var(--ink);color:#FAF8F5;
+  display:grid;place-items:center;
+  box-shadow:0 6px 22px -8px rgba(44,40,37,.6);
+  opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s,background-color .3s var(--ease);
+}
+.float-wa.is-visible{opacity:1;visibility:visible;transform:none}
+.float-wa:hover{background:var(--accent-deep)}
+.float-wa svg{width:26px;height:26px}
+@media (min-width:768px){.float-wa{right:28px;bottom:28px;width:58px;height:58px}}
+@supports(padding:env(safe-area-inset-bottom)){
+  .float-wa{bottom:calc(18px + env(safe-area-inset-bottom))}
+}
+
+/* ---------- Lightbox ---------- */
+.lb{
+  position:fixed;inset:0;z-index:90;
+  background:rgba(24,21,19,.94);
+  display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility .3s;
+}
+.lb.is-open{opacity:1;visibility:visible}
+.lb__fig{margin:0;max-width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;gap:14px;z-index:2}
+.lb__fig img{
+  max-width:100%;width:auto;height:auto;
+  max-height:calc(100vh - 150px);max-height:calc(100svh - 150px);
+  object-fit:contain;border-radius:var(--radius);margin:0 auto;
+}
+.lb__fig figcaption{
+  text-align:center;color:rgba(250,248,245,.82);
+  font-size:.82rem;letter-spacing:.08em;
+}
+.lb__btn{
+  position:absolute;z-index:3;width:48px;height:48px;border-radius:50%;
+  display:grid;place-items:center;color:#FAF8F5;
+  background:rgba(250,248,245,.1);border:1px solid rgba(250,248,245,.25);
+  transition:background-color .3s var(--ease);
+}
+.lb__btn:hover{background:rgba(250,248,245,.24)}
+.lb__btn svg{width:18px;height:18px}
+.lb__close{top:18px;right:18px}
+.lb__prev{left:14px;top:50%;transform:translateY(-50%)}
+.lb__next{right:14px;top:50%;transform:translateY(-50%)}
+@media (min-width:768px){.lb__prev{left:26px}.lb__next{right:26px}.lb__close{top:26px;right:26px}}
+/* no celular as setas saem de cima da foto e vão para a base */
+@media (max-width:560px){
+  .lb__fig img{max-height:calc(100vh - 215px);max-height:calc(100svh - 215px)}
+  .lb__prev{left:24px;right:auto;top:auto;bottom:22px;transform:none}
+  .lb__next{right:24px;left:auto;top:auto;bottom:22px;transform:none}
+}
+
+/* ---------- Revelação ao rolar ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.is-visible{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.09s}
+.reveal[data-delay="2"]{transition-delay:.18s}
+.reveal[data-delay="3"]{transition-delay:.27s}
+
+.skip-link{
+  position:absolute;left:16px;top:-60px;z-index:100;
+  background:var(--bg);color:var(--ink);padding:12px 18px;border-radius:2px;
+  text-decoration:none;font-size:.85rem;transition:top .25s var(--ease);
+}
+.skip-link:focus{top:16px}
+
+@media (prefers-reduced-motion:reduce){
+  html:focus-within{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container">
+    <a class="header__logo" href="#top" aria-label="Innove Móveis Planejados — início">
+      <svg class="logo" viewBox="0 0 360 92" role="img" aria-label="Innove Móveis Planejados">
+        <text x="180" y="42" text-anchor="middle" font-size="40" letter-spacing="12" fill="currentColor">INNOVE</text>
+        <path d="M158 58h44" stroke="currentColor" stroke-width="1.3"/>
+        <text x="180" y="81" text-anchor="middle" font-size="17" font-style="italic" letter-spacing="1.1" fill="currentColor" opacity=".88">Móveis Planejados</text>
+      </svg>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#ambientes">Ambientes</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel">
+  <a href="#projetos">Projetos</a>
+  <a href="#ambientes">Ambientes</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#contato">Contato</a>
+  <a class="btn btn--solid" href="https://wa.me/5548991495853?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+    Falar no WhatsApp
+  </a>
+</nav>
+
+<main id="conteudo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <img class="hero__img" src="images/hero-painel-ripado-topo.jpg"
+         alt="Parede revestida com painel ripado de madeira e armário embutido de duas portas em apartamento."
+         width="1440" height="950" fetchpriority="high" decoding="async">
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero__inner">
+        <h1>Móveis planejados sob medida para o seu espaço</h1>
+        <p class="hero__sub">Há mais de 20 anos transformando ambientes em Florianópolis.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="https://wa.me/5548991495853?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#projetos" aria-label="Rolar para os projetos">
+      <span>Role</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ============ FAIXA DE CREDIBILIDADE ============ -->
+  <section class="strip" aria-label="Destaques da empresa">
+    <div class="container">
+      <ul>
+        <li>
+          <svg class="star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.58 1.11 6.47L12 17.45l-5.81 3.05L7.3 14.03 2.6 9.45l6.5-.95z"/></svg>
+          <span><strong>4,9 no Google</strong> · 38 avaliações</span>
+        </li>
+        <li><span><strong>Mais de 20 anos</strong> de mercado</span></li>
+        <li><span>Projeto, produção e montagem <strong>próprios</strong></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__copy reveal">
+          <p class="eyebrow">Sobre a Innove</p>
+          <h2 class="section-title">Cada projeto começa pelo seu espaço</h2>
+          <p>Antes de desenhar qualquer coisa, a gente vai até o ambiente e mede como ele realmente é. Parede fora de esquadro, tubulação no meio do caminho, um rodapé mais alto — tudo isso muda o projeto.</p>
+          <p>Móvel pronto é feito para um espaço médio, que quase nunca é o seu. O planejado ocupa o que você tem: o canto, a altura até o teto, o vão atrás da porta.</p>
+          <p>Projeto, produção e montagem são feitos por nós. São mais de 20 anos fazendo isso em Florianópolis, do primeiro desenho até o dia em que o móvel está montado e alinhado no lugar.</p>
+          <!-- INSERIR: prazo médio real de produção e entrega, se a loja quiser divulgar -->
+          <div class="about__rule" aria-hidden="true"></div>
+        </div>
+        <figure class="about__figure reveal" data-delay="1" style="margin:0">
+          <img src="images/closet-branco.jpg" loading="lazy" decoding="async" width="1440" height="1800"
+               alt="Closet branco de portas de correr instalado em dormitório, com cabideiro, prateleira e gavetas internas à mostra.">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIA ============ -->
+  <section class="section section--alt" id="projetos">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Projetos</p>
+        <h2 class="section-title">Projetos entregues</h2>
+        <p class="section-lead">Ambientes reais, projetados e montados por nós. Toque em uma foto para ampliar.</p>
+      </div>
+
+      <div class="gallery" id="gallery">
+
+        <button class="tile reveal" type="button" data-full="images/hero-painel-ripado-topo.jpg" data-caption="Painel ripado e armário embutido" aria-label="Ampliar foto: Painel ripado e armário embutido">
+          <img src="images/hero-painel-ripado-topo.jpg" loading="lazy" decoding="async" width="1440" height="950"
+               style="object-position:64% center"
+               alt="Parede inteira revestida com painel ripado de madeira, armário embutido de duas portas e rack suspenso ao lado da janela.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Painel ripado e armário embutido</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" data-delay="1" type="button" data-full="images/home-office-cinza.jpg" data-caption="Home office sob medida" aria-label="Ampliar foto: Home office sob medida">
+          <img src="images/home-office-cinza.jpg" loading="lazy" decoding="async" width="1080" height="1440"
+               alt="Home office em marcenaria grafite com armários aéreos de correr em madeira escura, bancada de trabalho, gaveteiros e nichos.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Home office sob medida</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" data-delay="2" type="button" data-full="images/closet-branco.jpg" data-caption="Closet com portas de correr" aria-label="Ampliar foto: Closet com portas de correr">
+          <img src="images/closet-branco.jpg" loading="lazy" decoding="async" width="1440" height="1800"
+               alt="Closet branco com três portas de correr, uma delas aberta mostrando cabideiro, prateleira superior e gavetas.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Closet com portas de correr</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" type="button" data-full="images/estante-livros.jpg" data-caption="Estante de nichos" aria-label="Ampliar foto: Estante de nichos">
+          <img src="images/estante-livros.jpg" loading="lazy" decoding="async" width="1440" height="1800"
+               alt="Estante branca de nichos ocupando a parede inteira, com livros e objetos e armários fechados na base.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Estante de nichos</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" data-delay="1" type="button" data-full="images/banheiro-nicho-madeira.jpg" data-caption="Banheiro planejado" aria-label="Ampliar foto: Banheiro planejado">
+          <img src="images/banheiro-nicho-madeira.jpg" loading="lazy" decoding="async" width="1080" height="1080"
+               alt="Banheiro com gabinete amadeirado, cuba de apoio branca, gavetas e armário superior aproveitando a parede.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Banheiro planejado</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" data-delay="2" type="button" data-full="images/painel-tv-iluminado.jpg" data-caption="Painel de TV com iluminação" aria-label="Ampliar foto: Painel de TV com iluminação">
+          <img src="images/painel-tv-iluminado.jpg" loading="lazy" decoding="async" width="1290" height="1281"
+               alt="Painel de TV com prateleira de madeira iluminada por spots, prateleiras de vidro com LED e rack branco suspenso.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Painel de TV com iluminação</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" type="button" data-full="images/cozinha-compacta-madeira.jpg" data-caption="Cozinha compacta" aria-label="Ampliar foto: Cozinha compacta">
+          <img src="images/cozinha-compacta-madeira.jpg" loading="lazy" decoding="async" width="1440" height="1190"
+               alt="Cozinha compacta em MDF amadeirado com bancada preta, cooktop, forno embutido, armário aéreo com vidro e torre de nichos.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Cozinha compacta</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <button class="tile reveal" data-delay="1" type="button" data-full="images/cozinha-branca-l-topo.jpg" data-caption="Cozinha em L" aria-label="Ampliar foto: Cozinha em L">
+          <img src="images/cozinha-branca-l-topo.jpg" loading="lazy" decoding="async" width="1440" height="860"
+               alt="Cozinha branca em L com torre para forno e micro-ondas, armários aéreos com portas de vidro e bancada de granito preto.">
+          <span class="tile__veil" aria-hidden="true"></span>
+          <span class="tile__label">Cozinha em L</span>
+          <span class="tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+
+        <div class="tile-cta reveal" data-delay="2">
+          <h3>Tem mais projeto por aqui</h3>
+          <p>A gente publica os ambientes entregues no Instagram, com fotos de obra pronta.</p>
+          <a href="https://www.instagram.com/innoveplanejadosflorianopolis" target="_blank" rel="noopener">
+            @innoveplanejadosflorianopolis
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 7l5 5-5 5"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AMBIENTES ============ -->
+  <section class="section" id="ambientes">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Ambientes</p>
+        <h2 class="section-title">O que a gente planeja</h2>
+        <p class="section-lead">Do ambiente inteiro a uma peça só, desenhada para um lugar específico da casa.</p>
+      </div>
+
+      <div class="rooms reveal">
+        <article class="room">
+          <div class="room__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="24" height="8" rx="1"/><path d="M4 17h24v11H4z"/><path d="M16 17v11"/>
+              <circle cx="10" cy="8" r="1.3"/><circle cx="22" cy="8" r="1.3"/><path d="M10 21.5v2M22 21.5v2"/>
+            </svg>
+          </div>
+          <h3>Cozinhas</h3>
+          <p>Bancada, torre de fornos e armários aproveitando o vão que você tem.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="4" width="22" height="24" rx="1"/><path d="M16 4v24"/>
+              <path d="M13.5 14.5v3M18.5 14.5v3"/><path d="M5 24h22"/>
+            </svg>
+          </div>
+          <h3>Dormitórios e closets</h3>
+          <p>Guarda-roupa, cabeceira e closet usando toda a altura da parede.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 16h26"/><path d="M6 16v11M26 16v11"/>
+              <rect x="17" y="19" width="9" height="8" rx="1"/><path d="M17 23h9"/>
+              <rect x="9" y="6" width="14" height="7" rx="1"/>
+            </svg>
+          </div>
+          <h3>Home office</h3>
+          <p>Bancada de trabalho, gavetas e nichos no espaço que sobrou em casa.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="5" width="20" height="13" rx="1"/>
+              <path d="M3 22h26"/><path d="M8 22v5h16v-5"/><path d="M13 27h6"/>
+            </svg>
+          </div>
+          <h3>Salas e painéis</h3>
+          <p>Painel de TV, rack e estante desenhados para a medida da parede.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="3" width="14" height="10" rx="1"/>
+              <path d="M5 19h22"/><path d="M7 19v8h18v-8"/><path d="M16 13v6"/><path d="M7 23h18"/>
+            </svg>
+          </div>
+          <h3>Banheiros</h3>
+          <p>Gabinete, espelheira e nichos sob medida, mesmo em metragem curta.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="26" height="10" rx="1"/>
+              <path d="M9 11v4M14 11v6M19 11v4M24 11v6"/>
+            </svg>
+          </div>
+          <h3>Móveis sob medida</h3>
+          <p>Mesa, balcão ou peça avulsa feita para um lugar específico.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="section section--alt" aria-labelledby="titulo-depoimentos">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="rating">
+          <svg class="star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.58 1.11 6.47L12 17.45l-5.81 3.05L7.3 14.03 2.6 9.45l6.5-.95z"/></svg>
+          <strong>4,9</strong> · 38 avaliações no Google
+        </p>
+        <h2 class="section-title" id="titulo-depoimentos">O que dizem os clientes</h2>
+      </div>
+
+      <div class="quotes">
+        <figure class="quote reveal">
+          <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>Encomendei uma mesa sob medida para o escritório. Ficou do jeito que eu precisava e foi entregue no prazo combinado.</blockquote>
+          <figcaption>Avaliação no Google</figcaption>
+        </figure>
+
+        <figure class="quote reveal" data-delay="1">
+          <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>Fizeram o balcão da pia do meu apartamento, que é pequeno. Aproveitaram bem o espaço e o acabamento ficou muito bom.</blockquote>
+          <figcaption>Avaliação no Google</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact reveal">
+          <p class="eyebrow">Contato</p>
+          <h2 class="section-title">Vamos conversar sobre o seu projeto</h2>
+          <p class="section-lead">Conte o ambiente que você quer resolver. A gente combina uma visita para medir e desenhar.</p>
+
+          <ul class="info">
+            <li>
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              </span>
+              <div>
+                <dl><dt>Endereço</dt>
+                <!-- INSERIR: número do endereço, se houver -->
+                <dd>Servidão Reinaldo Nienkötter<br>Canto — Florianópolis/SC<br>CEP 88075-615</dd></dl>
+              </div>
+            </li>
+            <li>
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4.5-2 1.4a12.5 12.5 0 0 0 6.1 6.1l1.4-2L21 14.5v3a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 4 5.2 2 2 0 0 1 6 3Z"/></svg>
+              </span>
+              <div>
+                <dl><dt>Telefone e WhatsApp</dt>
+                <dd><a href="tel:+5548991495853">(48) 99149-5853</a></dd></dl>
+              </div>
+            </li>
+            <li>
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/></svg>
+              </span>
+              <div>
+                <dl><dt>Horário</dt>
+                <!-- INSERIR: horário de abertura e dias de funcionamento -->
+                <dd>Atendimento até as 17:30</dd></dl>
+              </div>
+            </li>
+            <li>
+              <span class="info__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div>
+                <dl><dt>Instagram</dt>
+                <dd><a href="https://www.instagram.com/innoveplanejadosflorianopolis" target="_blank" rel="noopener">@innoveplanejadosflorianopolis</a></dd></dl>
+              </div>
+            </li>
+          </ul>
+          <!-- INSERIR: e-mail comercial, se a loja quiser divulgar -->
+
+          <a class="btn btn--solid" href="https://wa.me/5548991495853?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div class="map reveal" data-delay="1">
+          <iframe
+            title="Mapa com a localização da Innove Móveis Planejados, na Servidão Reinaldo Nienkötter, Canto, Florianópolis"
+            src="https://www.google.com/maps?q=Servid%C3%A3o%20Reinaldo%20Nienk%C3%B6tter%2C%20Canto%2C%20Florian%C3%B3polis%20-%20SC%2C%2088075-615&hl=pt-BR&z=16&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Conte o que você precisa. A gente projeta.</h2>
+      <p>Mande uma mensagem com o ambiente e as medidas que você já tem em mãos.</p>
+      <a class="btn btn--light" href="https://wa.me/5548991495853?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <svg class="logo" viewBox="0 0 360 216" role="img" aria-label="Innove Móveis Planejados">
+          <g stroke="currentColor" stroke-width="1.4" fill="none" opacity=".65">
+            <path d="M52 62V26h72"/>
+            <path d="M308 154v36h-72"/>
+          </g>
+          <text x="180" y="118" text-anchor="middle" font-size="40" letter-spacing="12" fill="currentColor">INNOVE</text>
+          <path d="M158 134h44" stroke="currentColor" stroke-width="1.3"/>
+          <text x="180" y="157" text-anchor="middle" font-size="17" font-style="italic" letter-spacing="1.1" fill="currentColor" opacity=".85">Móveis Planejados</text>
+        </svg>
+
+        <address class="footer__addr">
+          Servidão Reinaldo Nienkötter — Canto<br>
+          Florianópolis/SC · CEP 88075-615<br>
+          <a href="tel:+5548991495853">(48) 99149-5853</a>
+        </address>
+      </div>
+
+      <nav class="footer__links" aria-label="Links de contato">
+        <a href="https://wa.me/5548991495853?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/innoveplanejadosflorianopolis" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          @innoveplanejadosflorianopolis
+        </a>
+      </nav>
+    </div>
+
+    <p class="footer__base">© 2026 Innove Móveis Planejados · Florianópolis, SC</p>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLUTUANTE ============ -->
+<a class="float-wa" id="floatWa"
+   href="https://wa.me/5548991495853?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados."
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto do projeto ampliada" hidden>
+  <button class="lb__btn lb__close" id="lbClose" type="button" aria-label="Fechar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb__btn lb__prev" id="lbPrev" type="button" aria-label="Foto anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5l-7 7 7 7"/></svg>
+  </button>
+  <button class="lb__btn lb__next" id="lbNext" type="button" aria-label="Próxima foto">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 5l7 7-7 7"/></svg>
+  </button>
+  <figure class="lb__fig">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCaption"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Header ao rolar ---------- */
+  var header = document.getElementById('header');
+  var floatWa = document.getElementById('floatWa');
+  var ticking = false;
+
+  function onScroll() {
+    var y = window.pageYOffset;
+    header.classList.toggle('is-scrolled', y > 40);
+    floatWa.classList.toggle('is-visible', y > window.innerHeight * 0.6);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { window.requestAnimationFrame(onScroll); ticking = true; }
+  }, { passive: true });
+  onScroll();
+
+  /* ---------- Menu mobile ---------- */
+  var burger = document.getElementById('burger');
+  var mobileNav = document.getElementById('mobile-nav');
+
+  function setMenu(open) {
+    mobileNav.classList.toggle('is-open', open);
+    document.body.classList.toggle('is-locked', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  }
+  burger.addEventListener('click', function () {
+    setMenu(!mobileNav.classList.contains('is-open'));
+  });
+  mobileNav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) setMenu(false);
+  });
+
+  /* ---------- Revelação ao rolar ---------- */
+  var revealables = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    revealables.forEach(function (el) { io.observe(el); });
+  } else {
+    revealables.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ---------- Lightbox ---------- */
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('.tile'));
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCaption = document.getElementById('lbCaption');
+  var lbClose = document.getElementById('lbClose');
+  var lbPrev = document.getElementById('lbPrev');
+  var lbNext = document.getElementById('lbNext');
+  var index = 0;
+  var lastFocus = null;
+
+  function show(i) {
+    index = (i + tiles.length) % tiles.length;
+    var tile = tiles[index];
+    var img = tile.querySelector('img');
+    lbImg.src = tile.getAttribute('data-full');
+    lbImg.alt = img ? img.getAttribute('alt') : '';
+    lbCaption.textContent = tile.getAttribute('data-caption') + ' — ' + (index + 1) + ' de ' + tiles.length;
+  }
+
+  function openLb(i) {
+    lastFocus = document.activeElement;
+    lb.hidden = false;
+    show(i);
+    // força o reflow para a transição de opacidade acontecer
+    void lb.offsetWidth;
+    lb.classList.add('is-open');
+    document.body.classList.add('is-locked');
+    // o foco só pega depois que o visibility recalcula
+    window.requestAnimationFrame(function () { lbClose.focus(); });
+  }
+
+  function closeLb() {
+    lb.classList.remove('is-open');
+    document.body.classList.remove('is-locked');
+    window.setTimeout(function () { lb.hidden = true; lbImg.removeAttribute('src'); }, 300);
+    if (lastFocus) lastFocus.focus();
+  }
+
+  tiles.forEach(function (tile, i) {
+    tile.addEventListener('click', function () { openLb(i); });
+  });
+
+  lbClose.addEventListener('click', closeLb);
+  lbPrev.addEventListener('click', function () { show(index - 1); });
+  lbNext.addEventListener('click', function () { show(index + 1); });
+  lb.addEventListener('click', function (e) {
+    if (e.target === lb) closeLb();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (mobileNav.classList.contains('is-open') && e.key === 'Escape') { setMenu(false); return; }
+    if (!lb.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeLb();
+    else if (e.key === 'ArrowLeft') show(index - 1);
+    else if (e.key === 'ArrowRight') show(index + 1);
+    else if (e.key === 'Tab') {
+      // mantém o foco dentro do lightbox
+      var focusables = [lbClose, lbPrev, lbNext];
+      var pos = focusables.indexOf(document.activeElement);
+      e.preventDefault();
+      var next = e.shiftKey ? pos - 1 : pos + 1;
+      focusables[(next + focusables.length) % focusables.length].focus();
+    }
+  });
+
+  /* ---------- Deslizar para trocar de foto no celular ---------- */
+  var touchX = null;
+  lb.addEventListener('touchstart', function (e) { touchX = e.changedTouches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', function (e) {
+    if (touchX === null) return;
+    var dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) show(dx > 0 ? index - 1 : index + 1);
+    touchX = null;
+  }, { passive: true });
+
+  /* ---------- Rolagem suave com compensação do header fixo ---------- */
+  var headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h'), 10) || 76;
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = link.getAttribute('href');
+      if (id === '#' || id.length < 2) return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - (id === '#top' ? 0 : headerH - 1);
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', id);
+    });
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  "name": "Innove Móveis Planejados",
+  "description": "Móveis planejados sob medida em Florianópolis, com projeto, produção e montagem próprios.",
+  "url": "https://innove-planejados.vercel.app/",
+  "image": "https://innove-planejados.vercel.app/og-image.jpg",
+  "telephone": "+55 48 99149-5853",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Servidão Reinaldo Nienkötter",
+    "addressLocality": "Florianópolis",
+    "addressRegion": "SC",
+    "postalCode": "88075-615",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/innoveplanejadosflorianopolis"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "38"
+  }
+}
+</script>
+
+</body>
+</html>
