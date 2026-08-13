@@ -49,3 +49,8 @@ O site não inventa informação. Onde falta dado real há um comentário
 
 Vercel, a partir da branch `main`. A pasta publicada é `public/`, definida em
 `vercel.json`.
+
+No ar em <https://innove-moveis-planejados.vercel.app>.
+
+O domínio `innove-planejados.vercel.app` já estava ocupado por outro projeto
+na Vercel, fora desta conta.
